@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Teacher Dashboard</h2>
+    <p id="welcomeMsg"></p>
+
+    <h3>Upload Student Result</h3>
+
+    <form id="resultForm">
+      <input type="text" id="studentName" placeholder="Student Name" required>
+      <input type="text" id="subject" placeholder="Subject" required>
+      <input type="number" id="score" placeholder="Score (0 - 100)" required>
+      <button type="submit">Upload Result</button>
+    </form>
+
+    <h3>Uploaded Results</h3>
+    <div id="resultList"></div>
+
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="js/teacher.js"></script>
+</body>
+</html>
